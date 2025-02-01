@@ -1,0 +1,30 @@
+alias rm='mv --target-directory=$HOME/.trash'
+alias rmd='/bin/rm  --recursive --force --verbose '
+alias restart-nm='sudo systemctl restart NetworkManager'
+alias rmt='\rm -rf ~/.trash/{*,.*}'
+alias save-packs='pacman -Qqe > ~/.pacman-packs.txt'
+alias disk='ncdu'
+alias py='python3'
+alias cat='bat'
+alias ver='cat /etc/os-release'
+alias btop='~/.config/hypr/scripts/btop-pywal.sh && /usr/bin/btop'
+
+
+alias 000='chmod -R 000'
+alias 644='chmod -R 644'
+alias 666='chmod -R 666'
+alias 755='chmod -R 755'
+alias 777='chmod -R 777'
+
+
+
+# Change directory aliases
+alias home='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+
+export GOPATH=~/.go/
