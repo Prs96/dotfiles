@@ -43,9 +43,4 @@ waypaper --wallpaper $wallpaper
 
 # -----------------------------------------------------
 # Launch Waybar (add this line to start Waybar)
-# -----------------------------------------------------
-if ! pgrep -x "waybar" >/dev/null; then
-	echo ":: Launching Waybar..."
-	waybar &
-fi
-
+# ---------------------------------------------------
