@@ -103,5 +103,4 @@ eval "$(zoxide init --cmd cd zsh)"
 
 POSH=agnoster
 
-export GIT_TIMEOUT=300  # Set a higher timeout for git operations, in seconds.
 

@@ -19,13 +19,12 @@ configuration {
     display-run:                 " ";
     display-filebrowser:         "  ";
     display-window:              "  ";
-	drun-display-format:        "{name}";
+    drun-display-format:        "{name}";
     hover-select:               false;
     scroll-method:              1;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";
     window-format:              "{w} · {c} · {t}";
-    
 }
 
 /* ---- Load font ---- */
@@ -45,8 +44,8 @@ configuration {
 
 // Main //
 window {
-    height:                      35em;
-    width:                       56em;
+    height:                      26.25em;
+    width:                       42em;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
@@ -69,12 +68,11 @@ mainbox {
     background-image:            @current-image;
 }
 
-
 // Inputs //
 inputbar {
     enabled:                     true;
     spacing:                     0em;
-    padding:                     5em;
+    padding:                     3.75em;
     children:                    [ "textbox-prompt-colon", "entry" ];
     background-color:            transparent;
     background-image:            url("~/.config/ml4w/cache/current_wallpaper", width);
@@ -84,18 +82,18 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "  ";
-    padding:                     1em 1em 0em 0em;
+    padding:                     0.75em 0.75em 0em 0em;
     text-color:                  @foreground;
-    border-radius:               2em 0em 0em 2em;
+    border-radius:               1.5em 0em 0em 1.5em;
     background-color:            @background;
     background-image:            url("~/.config/ml4w/cache/current_wallpaper", width);
 }
 
 entry {
     enabled:                     true;
-    border-radius:               0em 2em 2em 0em;
-    spacing:                     1em;
-    padding:                     1em;
+    border-radius:               0em 1.5em 1.5em 0em;
+    spacing:                     0.75em;
+    padding:                     0.75em;
     background-color:            @background;
     text-color:                  @foreground;
     cursor:                      text;
@@ -113,11 +111,11 @@ listbox {
 }
 
 listview {
-    padding:                     1.5em;
-    spacing:                     0.5em;
+    padding:                     1.125em;
+    spacing:                     0.375em;
     enabled:                     true;
     columns:                     1;
-    lines:                       5;
+    lines:                       3.75;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -130,20 +128,19 @@ listview {
     text-color:                  @foreground;
 }
 
-
 // Modes //
 mode-switcher {
     orientation:                 vertical;
-    width:                       6.6em;
+    width:                       4.95em;
     enabled:                     true;
-    padding:                     1.5em;
-    spacing:                     1.5em;
+    padding:                     1.125em;
+    spacing:                     1.125em;
     background-color:            transparent;
 }
 
 button {
     cursor:                      pointer;
-    border-radius:               2em;
+    border-radius:               1.5em;
     background-color:            @background;
     text-color:                  @foreground;
 }
@@ -153,12 +150,11 @@ button selected {
     text-color:                  @foreground;
 }
 
-
 // Elements //
 element {
     enabled:                     true;
     spacing:                     0em;
-    padding:                     0.5em;
+    padding:                     0.375em;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @foreground;
@@ -167,59 +163,19 @@ element {
 element selected.normal {
     background-color:            @color11;
     text-color:                  @foreground;
-    border-radius:               1.5em;
-}
-
-element normal.normal {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element normal.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element normal.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element selected.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element selected.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.normal {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    border-radius:               1.125em;
 }
 
 element-icon {
-    size:                        3em;
+    size:                        2.25em;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
 }
 
 element-text {
-    vertical-align:              0.5;
-    horizontal-align:            0.1;
+    vertical-align:              0.375;
+    horizontal-align:            0.075;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
@@ -236,6 +192,6 @@ error-message {
 textbox {
     text-color:                  inherit;
     background-color:            inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
+    vertical-align:              0.375;
+    horizontal-align:            0.375;
 }
