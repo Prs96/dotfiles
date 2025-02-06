@@ -8,10 +8,11 @@ base-devel
 bat
 bc
 bibata-cursor-theme-bin
+blesh-git
 blueman
+bluetui
 breeze
 brightnessctl
-btop
 burpsuite
 catppuccin-gtk-theme-mocha
 cava
@@ -21,10 +22,12 @@ dirbuster
 dosfstools
 dpkg
 efibootmgr
+efm-langserver
 exfatprogs
 exiftool-rs-git
 eza
 fastfetch
+fd
 feh
 firefox
 flatpak
@@ -39,7 +42,6 @@ goverlay
 gowall
 gparted
 grim
-grimblast-git
 grub
 gst-plugin-pipewire
 gtk4
@@ -142,6 +144,7 @@ tree
 ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
 tumbler
 ufw
 ventoy-bin
@@ -157,6 +160,7 @@ xdg-desktop-portal-gtk
 xorg-xhost
 yazi
 zen-browser-bin
+zoxide
 zram-generator
 zsh
 zsh-completions
