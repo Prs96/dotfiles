@@ -14,12 +14,12 @@
 threshhold_green=0
 threshhold_yellow=25
 threshhold_red=100
-install_platform="$(cat ~/.config/ml4w/settings/platform.sh)"
+install_platform="arch"
 
 # Check if platform is supported
 case $install_platform in
     arch)
-        aur_helper="$(cat ~/.config/ml4w/settings/aur.sh)"
+        aur_helper="paru"
 
         # ----------------------------------------------------- 
         # Calculate available updates

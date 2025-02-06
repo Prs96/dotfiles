@@ -7,7 +7,9 @@
 {
 	"layer": "top",
 	"position": "top",
-	"modules-center": ["hyprland/workspaces"],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
 	"modules-left": [
 		"custom/startmenu",
 		"hyprland/window",
@@ -72,7 +74,13 @@
 		"on-click": "~/.config/ml4w/settings/system-monitor.sh",
 	},
 	"network": {
-		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
 		"format-ethernet": " {bandwidthDownOctets}",
 		"format-wifi": "{icon} {signalStrength}%",
 		"format-disconnected": "󰤮",
@@ -92,13 +100,37 @@
 		"format-source": " {volume}%",
 		"format-source-muted": "",
 		"format-icons": {
-			"headphones": [" ", " ", " "],
+			"headphones": [
+				" ",
+				" ",
+				" "
+			],
 			"handsfree": "󰴸",
-			"headset": [" ", " ", " "],
-			"phone": [" ", " ", " "],
-			"portable": [" ", " ", " "],
-			"car": [" ", " ", " "],
-			"default": ["", "", ""],
+			"headset": [
+				" ",
+				" ",
+				" "
+			],
+			"phone": [
+				" ",
+				" ",
+				" "
+			],
+			"portable": [
+				" ",
+				" ",
+				" "
+			],
+			"car": [
+				" ",
+				" ",
+				" "
+			],
+			"default": [
+				"",
+				"",
+				""
+			],
 		},
 		"on-click": "sleep 0.1 && pavucontrol",
 	},
@@ -127,6 +159,13 @@
 		"format-charging": "{capacity}% 󰂄",
 		"format-plugged": "{capacity}% 󰂄 ",
 		"format-alt": "{time} {icon}",
-		"format-icons": ["󰁻", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"],
+		"format-icons": [
+			"󰁻",
+			"󰁼",
+			"󰁾",
+			"󰂀",
+			"󰂂",
+			"󰁹"
+		],
 	},
 }

@@ -23,3 +23,4 @@ else
 	touch ~/.cache/gamemode
     notify-send "Gamemode activated" "Animations and blur disabled"
 fi
+
