@@ -104,3 +104,5 @@ eval "$(zoxide init --cmd cd zsh)"
 POSH=agnoster
 
 
+export EDITOR=nvim
+export VISUAL=nvim
