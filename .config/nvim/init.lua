@@ -36,21 +36,3 @@ vim.keymap.set("n", "<space>to", function()
 
 	job_id = vim.bo.channel
 end)
-vim.api.nvim_create_autocmd("BufReadPost", {
-	pattern = "*.pdf",
-	callback = function()
-		local pdf_file = vim.fn.expand("%:p") -- Get full PDF path
-		local cmd = "pdftotext -layout " .. vim.fn.shellescape(pdf_file) .. " -" -- Properly escape filename
-		local output = vim.fn.systemlist(cmd) -- Run command and capture output
-
-		-- Check if `pdftotext` failed
-		if vim.v.shell_error ~= 0 then
-			vim.api.nvim_err_writeln("Error running pdftotext on: " .. pdf_file)
-			return
-		end
-
-		-- Replace buffer content with extracted text
-		vim.api.nvim_buf_set_lines(0, 0, -1, false, output)
-		vim.bo.filetype = "txt" -- Set buffer filetype to text
-	end,
-})
