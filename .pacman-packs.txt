@@ -61,6 +61,7 @@ imagemagick
 inotify-tools
 inxi
 jq
+lazygit
 lib32-gamemode
 lib32-nvidia-utils
 libadwaita
@@ -114,11 +115,14 @@ pipewire-jack
 pipewire-pulse
 polkit-gnome
 power-profiles-daemon
+pv
+python-flask
 python-gobject
 python-pip
 python-pywal
 python-pywalfox
 python-screeninfo
+python-virtualenv
 qbittorrent
 qimgv
 qt5-graphicaleffects
@@ -135,6 +139,8 @@ slurp
 stacer-bin
 steam
 strace
+superfile
+swaync
 telegram-desktop
 testdisk
 timeshift
@@ -147,6 +153,7 @@ ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 tumbler
 ufw
+usbimager
 ventoy-bin
 vlc
 vulkan-tools
