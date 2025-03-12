@@ -1,5 +1,3 @@
--- fuzzy finder over lists
-
 local config = function()
 	local telescope = require("telescope")
 	telescope.setup({
@@ -27,15 +25,16 @@ local config = function()
 		},
 	})
 
-	-- load extensions
+	-- Load extensions
 	telescope.load_extension("fzf")
 	telescope.load_extension("noice")
 	telescope.load_extension("lazy_plugins")
 
-	-- set keymaps
+	-- Set keymaps
 	local builtin = require("telescope.builtin")
 	local opts = { noremap = true, silent = true }
 	local keymap = vim.keymap
+
 	opts.desc = "help tags"
 	keymap.set("n", "<leader>fh", builtin.help_tags, opts)
 
@@ -51,7 +50,7 @@ local config = function()
 	opts.desc = "lazy plugins"
 	keymap.set("n", "<leader>lp", "<CMD>Telescope lazy_plugins<CR>", opts)
 
-	-- neorg telescope mappings
+	-- neorg telescope mappings (if needed)
 end
 
 return {
@@ -69,12 +68,5 @@ return {
 		"polirritmico/telescope-lazy-plugins.nvim",
 		"nvim-neorg/neorg-telescope",
 	},
-	require("config.telescope.multigrep").setup(),
-	-- keys = {
-	-- 	{ "<leader>fh", "Telescope help_tags", desc = "Help tags" },
-	-- 	{ "<leader>ff", "Telescope find_files", desc = "Find files" },
-	-- 	{ "<leader>fg", "Telescope live_grep", desc = "Live grep" },
-	-- 	{ "<leader>fb", "Telescope buffers", desc = "Buffers" },
-	-- 	{ "<leader>lp", "<CMD>Telescope lazy_plugins<CR>", desc = "Lazy plugins" },
-	-- }
+	config = config, -- Assign the config function here
 }

@@ -79,6 +79,7 @@ lutris
 lynis
 mangohud
 ml4w-hyprland
+mov-cli
 mpc
 mpd
 mtpfs
@@ -146,6 +147,7 @@ testdisk
 timeshift
 timidity++
 traceroute
+trash-cli
 tree
 ttf-fira-code
 ttf-fira-sans
