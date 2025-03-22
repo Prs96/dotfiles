@@ -2,6 +2,8 @@ require("config.lazy")
 
 vim.opt.shiftwidth = 4
 vim.opt.number = true
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
 
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
@@ -28,6 +30,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
 	end,
 })
 local job_id = 0
+
 vim.keymap.set("n", "<space>to", function()
 	vim.cmd.vnew()
 	vim.cmd.term()
