@@ -106,3 +106,6 @@ POSH=agnoster
 
 export EDITOR=nvim
 export VISUAL=nvim
+
+
+

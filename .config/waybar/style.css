@@ -8,91 +8,107 @@
 @import url("../../.cache/wal/colors-waybar.css");
 
 * {
-  font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 12px;
-  border-radius: 0px;
-  border: none;
-  min-height: 0px;
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 12px;
+    border-radius: 0px;
+    border: none;
+    min-height: 0px;
+}
+/***
+ *    ┓ ┓┓┓┓┓┓┓┓  ┓┓┓┓┓
+ *    ┃┃┃┫┫┫┓┫┫┫  ┃ ┗┓┗┓
+ *    ┗┫┛┛┛┫┛┛┛  ┗┓┗┓┗┓
+ *                         
+ */
+
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 12px;
+    border-radius: 0px;
+    border: none;
+    min-height: 0px;
 }
 window#waybar {
-  background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 #workspaces {
-  color: @color0;
-  background: @color0;
-  margin: 3px 3px;
-  padding: 4px 4px;
-  border-radius: 12px;
+    color: @color0;
+    background: @color0;
+    margin: 3px 3px;
+    padding: 4px 4px;
+    border-radius: 12px;
 }
 #workspaces button {
-  font-weight: bold;
-  padding: 0px 4px;
-  margin: 0px 2px;
-  border-radius: 12px;
-  color: @color0;
-  background: linear-gradient(45deg, @color8, @color4);
-  opacity: 0.5;
-  transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-  font-weight: bold;
-  padding: 0px 4px;
-  margin: 0px 2px;
-  border-radius: 12px;
-  color: @color0;
-  background: linear-gradient(45deg, @color8, @color4);
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-  min-width: 30px;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    min-width: 30px;
 }
 
 #workspaces button.urgent {
-  font-weight: bold;
-  padding: 0px 4px;
-  margin: 0px 2px;
-  border-radius: 12px;
-  color: @color0;
-  background: linear-gradient(45deg, @color6, @color12);
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-  min-width: 30px;
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color6, @color12);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    min-width: 30px;
 }
 
 #workspaces button:hover {
-  font-weight: bold;
-  border-radius: 12px;
-  color: @color0;
-  background: linear-gradient(45deg, @color8, @color4);
-  opacity: 0.8;
-  transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
 }
 tooltip {
-  background: @color0;
-  border: 1px solid @color4;
-  border-radius: 9px;
+    background: @color0;
+    border: 1px solid @color4;
+    border-radius: 9px;
 }
 tooltip label {
-  color: @color8;
+    color: @color8;
 }
 #window,
 #pulseaudio,
 #cpu,
 #memory {
-  font-weight: bold;
-  margin: 3px 0px;
-  margin-left: 5px;
-  padding: 0px 13px;
-  background: @color4;
-  color: @color0;
-  border-radius: 18px 7px 18px 7px;
+    font-weight: bold;
+    margin: 3px 0px;
+    margin-left: 5px;
+    padding: 0px 13px;
+    background: @color4;
+    color: @color0;
+    border-radius: 18px 7px 18px 7px;
 }
 #custom-startmenu {
-  color: @color0;
-  background: linear-gradient(90deg, @color4, @color8);
-  font-size: 21px;
-  margin: 0px;
-  padding: 0px 22px 0px 11px;
-  border-radius: 0px 0px 30px 0px;
+    color: @color0;
+    background: linear-gradient(90deg, @color4, @color8);
+    font-size: 21px;
+    margin: 0px;
+    padding: 0px 22px 0px 11px;
+    border-radius: 0px 0px 30px 0px;
 }
 #custom-pacman,
 #network,
@@ -101,22 +117,129 @@ tooltip label {
 #tray,
 #custom-exit,
 #bluetooth {
-  font-weight: bold;
-  background: @color6;
-  color: @color0;
-  margin: 3px 0px;
-  margin-right: 5px;
-  border-radius: 7px 18px 7px 18px;
-  padding: 0px 13px;
+    font-weight: bold;
+    background: @color6;
+    color: @color0;
+    margin: 3px 0px;
+    margin-right: 5px;
+    border-radius: 7px 18px 7px 18px;
+    padding: 0px 13px;
 }
 #bluetooth {
-  color: black;
+    color: black;
 }
 #clock {
-  font-weight: bold;
-  color: @color0;
-  background: linear-gradient(90deg, @color4, @color8);
-  margin: 0px;
-  padding: 0px 11px 0px 22px;
-  border-radius: 0px 0px 0px 30px;
+    font-weight: bold;
+    color: @color0;
+    background: linear-gradient(90deg, @color4, @color8);
+    margin: 0px;
+    padding: 0px 11px 0px 22px;
+    border-radius: 0px 0px 0px 30px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+#workspaces {
+    color: @color0;
+    background: @color0;
+    margin: 3px 3px;
+    padding: 4px 4px;
+    border-radius: 12px;
+}
+#workspaces button {
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+#workspaces button.active {
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    min-width: 30px;
+}
+
+#workspaces button.urgent {
+    font-weight: bold;
+    padding: 0px 4px;
+    margin: 0px 2px;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color6, @color12);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    min-width: 30px;
+}
+
+#workspaces button:hover {
+    font-weight: bold;
+    border-radius: 12px;
+    color: @color0;
+    background: linear-gradient(45deg, @color8, @color4);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+tooltip {
+    background: @color0;
+    border: 1px solid @color4;
+    border-radius: 9px;
+}
+tooltip label {
+    color: @color8;
+}
+#window,
+#pulseaudio,
+#cpu,
+#memory {
+    font-weight: bold;
+    margin: 3px 0px;
+    margin-left: 5px;
+    padding: 0px 13px;
+    background: @color4;
+    color: @color0;
+    border-radius: 18px 7px 18px 7px;
+}
+#custom-startmenu {
+    color: @color0;
+    background: linear-gradient(90deg, @color4, @color8);
+    font-size: 21px;
+    margin: 0px;
+    padding: 0px 22px 0px 11px;
+    border-radius: 0px 0px 30px 0px;
+}
+#custom-pacman,
+#network,
+#battery,
+#custom-notification,
+#tray,
+#custom-exit,
+#bluetooth {
+    font-weight: bold;
+    background: @color6;
+    color: @color0;
+    margin: 3px 0px;
+    margin-right: 5px;
+    border-radius: 7px 18px 7px 18px;
+    padding: 0px 13px;
+}
+#bluetooth {
+    color: black;
+}
+#clock {
+    font-weight: bold;
+    color: @color0;
+    background: linear-gradient(90deg, @color4, @color8);
+    margin: 0px;
+    padding: 0px 11px 0px 22px;
+    border-radius: 0px 0px 0px 30px;
 }

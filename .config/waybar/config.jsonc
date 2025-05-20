@@ -15,7 +15,7 @@
 		"hyprland/window",
 		"pulseaudio",
 		"cpu",
-		"memory",
+		"memory"
 	],
 	"modules-right": [
 		"custom/exit",
@@ -24,7 +24,7 @@
 		"battery",
 		"network",
 		"tray",
-		"clock",
+		"clock"
 	],
 	"hyprland/workspaces": {
 		"on-scroll-up": "hyprctl dispatch workspace r-1",
