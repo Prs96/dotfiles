@@ -108,4 +108,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 
-
+alias music='tmux new-session -s $$ "tmux source-file ~/.ncmpcpp/tsession"'
+_trap_exit() { tmux kill-session -t $$; }
+export MUSIC_DIR="/home/pranav/Music"
