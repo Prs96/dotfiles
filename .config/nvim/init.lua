@@ -11,6 +11,8 @@ vim.keymap.set("v", "<space>x", ":lua<CR>")
 vim.keymap.set("t", "<C-w>h", "<C-\\><C-n><C-w>h", { silent = true })
 vim.keymap.set("n", "-", "<cmd>Oil<CR>")
 vim.keymap.set("n", "<space>e", ":lua MiniFiles.open()<CR>", { desc = "Open file" })
+vim.keymap.set({ "n", "x" }, "y", '"+y')
+vim.keymap.set("n", "Y", '"+Y')
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
