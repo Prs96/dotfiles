@@ -18,7 +18,6 @@
 		"memory"
 	],
 	"modules-right": [
-		"custom/exit",
 		"custom/notification",
 		"custom/pacman",
 		"battery",
@@ -60,18 +59,18 @@
 		"interval": 5,
 		"format": " {}%",
 		"tooltip": true,
-		"on-click": "~/.config/ml4w/settings/system-monitor.sh",
+		"on-click": "~/.config/waybar/script/system-monitor.sh",
 	},
 	"cpu": {
 		"interval": 5,
 		"format": " {usage:2}%",
 		"tooltip": true,
-		"on-click": "~/.config/ml4w/settings/system-monitor.sh",
+		"on-click": "~/.config/waybar/scripts/system-monitor.sh",
 	},
 	"disk": {
 		"format": " {free}",
 		"tooltip": true,
-		"on-click": "~/.config/ml4w/settings/system-monitor.sh",
+		"on-click": "~/.config/waybar/scripts/system-monitor.sh",
 	},
 	"network": {
 		"format-icons": [
@@ -86,7 +85,7 @@
 		"format-disconnected": "󰤮",
 		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 		"tooltip-format-ethernet": "{ifname} 🖧 ",
-		"on-click": "~/.config/ml4w/settings/networkmanager.sh",
+		"on-click": "~/.config/waybar/scripts/networkmanager.sh",
 		"on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
 	},
 	"tray": {
@@ -133,11 +132,6 @@
 			],
 		},
 		"on-click": "sleep 0.1 && pavucontrol",
-	},
-	"custom/exit": {
-		"tooltip": false,
-		"format": "",
-		"on-click": "wlogout",
 	},
 	"custom/pacman": {
 		"format": "󰅢 {}",
