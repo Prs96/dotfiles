@@ -1,1 +1,0 @@
-waypaper/reload-pywal.sh
