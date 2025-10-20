@@ -31,3 +31,7 @@ alias .....='cd ../../../..'
 export GOPATH=~/.go/
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export PGDATABASE=s23b62
+export PGUSER=pranav
+
+
