@@ -18,6 +18,8 @@ wal -i "$WALLPAPER"
 # Relaunch waybar
 ~/.config/waybar/launch.sh
 
+pywalfox update
+
 # Output locations
 OUT_DIR="$HOME/.config/wallpapers/cache"
 OUT_TXT="$OUT_DIR/current_wallpaper"
@@ -35,4 +37,5 @@ convert "$WALLPAPER" -blur 0x15 "$OUT_IMG"
 
 # Save a copy of the current wallpaper as copy.png (overwrite if exists)
 convert "$WALLPAPER" "$OUT_COPY"
+
 
