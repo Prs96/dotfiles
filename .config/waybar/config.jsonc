@@ -7,6 +7,9 @@
 {
 	"layer": "top",
 	"position": "top",
+    "window": {
+        "class": "waybar"
+    },
 	"modules-center": [
 		"hyprland/workspaces"
 	],
