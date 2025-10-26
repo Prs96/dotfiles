@@ -71,7 +71,6 @@ tooltip label {
     padding: 0px 12px;
     background: transparent;
     color: @color7;
-    border-left: 2px solid @color8;
 }
 
 #custom-startmenu {
@@ -79,7 +78,6 @@ tooltip label {
     background: transparent;
     margin: 4px 2px;
     padding: 0px 12px;
-    border-left: 2px solid @color4;
 }
 
 #clock {
@@ -87,7 +85,6 @@ tooltip label {
     background: transparent;
     margin: 4px 2px;
     padding: 0px 12px;
-    border-right: 2px solid @color4;
 }
 
 #bluetooth {
