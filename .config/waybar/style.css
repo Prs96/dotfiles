@@ -90,3 +90,8 @@ tooltip label {
 #bluetooth {
     color: @color7;
 }
+#custom-cava {
+    color: @color7;
+    padding-right: 5px;
+    letter-spacing: -5px;
+}
