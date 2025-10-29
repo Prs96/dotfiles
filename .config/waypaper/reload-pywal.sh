@@ -38,4 +38,6 @@ convert "$WALLPAPER" -blur 0x15 "$OUT_IMG"
 # Save a copy of the current wallpaper as copy.png (overwrite if exists)
 convert "$WALLPAPER" "$OUT_COPY"
 
+pkill swaync && swaync
+
 

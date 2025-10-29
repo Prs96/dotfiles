@@ -22,7 +22,7 @@
 	],
 	"modules-right": [
         "custom/cava",
-	//	"custom/notification",
+		"custom/notification",
 		"custom/pacman",
 		"battery",
 		"network",
