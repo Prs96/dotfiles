@@ -9,7 +9,7 @@ alias py='python3'
 alias cat='bat'
 alias ver='cat /etc/os-release'
 alias btop='~/.config/hypr/scripts/btop-pywal.sh && /usr/bin/btop'
-alias sdown='ssh pranav@100.100.182.91 'sudo poweroff''
+alias sdown="ssh -t pranav@100.100.182.91 'sudo poweroff'"
 
 alias 000='chmod -R 000'
 alias 644='chmod -R 644'
