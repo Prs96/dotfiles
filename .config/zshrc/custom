@@ -10,6 +10,8 @@ alias cat='bat'
 alias ver='cat /etc/os-release'
 alias btop='~/.config/hypr/scripts/btop-pywal.sh && /usr/bin/btop'
 alias sdown="ssh -t pranav@100.100.182.91 'sudo poweroff'"
+alias dim="ssh -t pranav@100.100.182.91 'brightnessctl set 0%'"
+alias bright="ssh -t pranav@100.100.182.91 'brightnessctl set 75%'"
 
 alias 000='chmod -R 000'
 alias 644='chmod -R 644'
