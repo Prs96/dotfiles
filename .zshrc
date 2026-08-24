@@ -113,3 +113,5 @@ _trap_exit() { tmux kill-session -t $$; }
 export MUSIC_DIR="/home/pranav/Music"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PATH=$PATH:$HOME/.go/bin
+export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH 2>/dev/null || echo $HOME/go)/bin
