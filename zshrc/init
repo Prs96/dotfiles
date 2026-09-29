@@ -1,0 +1,16 @@
+eval "$(mise activate bash)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+setopt autocd
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+fastfetch --config /opt/homebrew/share/fastfetch/presets/examples/13.jsonc
+
+alias ls='eza -a --icons=always'
+alias ll='eza -al --icons=always'
+alias lt='eza -a --tree --level=1 --icons=always'

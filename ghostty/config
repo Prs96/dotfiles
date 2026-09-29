@@ -1,0 +1,41 @@
+# Theme
+theme = Catppuccin Mocha
+
+# Font settings (from Kitty)
+font-family = "FiraCode Nerd Font"
+font-size = 16
+
+# Window sizing & state (from Kitty)
+window-save-state = never
+window-width = 950
+window-height = 500
+window-padding-x = 8
+window-padding-y = 8 
+window-padding-balance = true
+
+# Window decorations & appearance
+macos-titlebar-style = hidden
+background-opacity = 0.8
+background-blur = 14
+unfocused-split-opacity = 0.5
+
+# Behavior & terminal features
+scrollback-limit = 2000
+cursor-style-blink = true
+confirm-close-surface = false
+macos-option-as-alt = true
+
+# Keybindings
+keybind = cmd+r=reload_config
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:down
+keybind = cmd+k=goto_split:up
+keybind = cmd+l=goto_split:right
+keybind = cmd+shift+h=resize_split:left,10
+keybind = cmd+shift+j=resize_split:down,10
+keybind = cmd+shift+k=resize_split:up,10
+keybind = cmd+shift+l=resize_split:right,10
+keybind = cmd+w>s=new_split:down
+keybind = cmd+w>v=new_split:right
+keybind = cmd+w>m=toggle_split_zoom
+keybind = cmd+w>.=close_surface
