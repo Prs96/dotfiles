@@ -49,15 +49,15 @@ cmd-7 = 'workspace 7'
 cmd-8 = 'workspace 8'
 cmd-9 = 'workspace 9'
 
-cmd-ctrl-1 = 'move-node-to-workspace 1'
-cmd-ctrl-2 = 'move-node-to-workspace 2'
-cmd-ctrl-3 = 'move-node-to-workspace 3'
-cmd-ctrl-4 = 'move-node-to-workspace 4'
-cmd-ctrl-5 = 'move-node-to-workspace 5'
-cmd-ctrl-6 = 'move-node-to-workspace 6'
-cmd-ctrl-7 = 'move-node-to-workspace 7'
-cmd-ctrl-8 = 'move-node-to-workspace 8'
-cmd-ctrl-9 = 'move-node-to-workspace 9'
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
 
 cmd-tab = 'workspace-back-and-forth'
 cmd-shift-tab = 'move-workspace-to-monitor --wrap-around next'
@@ -89,9 +89,7 @@ if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Music'
+if.app-id = 'dev.nolight.sonora'
 run = 'move-node-to-workspace 3'
 
-[[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace 3'
+
